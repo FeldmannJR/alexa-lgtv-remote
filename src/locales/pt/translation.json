@@ -1,0 +1,48 @@
+{
+    "TurnDeviceOnUtterances": [
+        "ligar {|tv}"
+    ],
+    "TurnDeviceOffUtterances": [
+        "desligar { |tv}"
+    ],
+    "SwitchDeviceMuteUtterances": [
+        "mutar { |tv}",
+        "silenciar"
+    ],
+    "SwitchDeviceUnmuteUtterances": [
+        "desmutar tv",
+        "descelenciar"
+    ],
+    "LaunchDeviceAppUtterances": [
+        "abrir {-|app_id}"
+    ],
+    "SwitchDeviceInputUtterances": [
+        "alterar entrada para {-|input_id}",
+        "trocar {para} {-|input_id}"
+    ],
+    "ControlDeviceMediaPlayUtterances": [
+        "play",
+        "resumir"
+    ],
+    "ControlDeviceMediaPauseUtterances": [
+        "pausar"
+    ],
+    "ControlDeviceMediaStopUtterances": [
+        "parar"
+    ],
+    "Connected": "Conectado.",
+    "Disconnected": "Disconectado",
+    "OK": [
+        "Ta na mão chefia.",
+        "Feito meu consagrado.",
+        "Resolvido meu bom.",
+        "Tá ok viu",
+        "Tá feito"
+    ],
+    "DeviceOff": "O dispositivo está desligado",
+    "DeviceProblem": "Tem um problema com o dispositivo.",
+    "HelpOutput": "Você pode dizer \"ligar tv\". Você também pode pedir para sair.",
+    "RePrompt": "O que você gostaria de fazer?",
+    "StopOutput": "Beleza, chefia!",
+    "CancelOutput": "Sem problemas, cancelando."
+}

@@ -1,46 +1,14 @@
-TurnDeviceOn on
-TurnDeviceOn turn on
-TurnDeviceOn to turn on
-TurnDeviceOn turn on tv
-TurnDeviceOn to turn on tv
-TurnDeviceOff off
-TurnDeviceOff turn off
-TurnDeviceOff to turn off
-TurnDeviceOff turn off tv
-TurnDeviceOff to turn off tv
-SwitchDeviceMute mute
-SwitchDeviceMute to mute
-SwitchDeviceMute mute tv
-SwitchDeviceMute to mute tv
-SwitchDeviceMute turn on mute
-SwitchDeviceUnmute un mute
-SwitchDeviceUnmute to un mute
-SwitchDeviceUnmute unmute
-SwitchDeviceUnmute to unmute
-SwitchDeviceUnmute un mute tv
-SwitchDeviceUnmute to un mute tv
-SwitchDeviceUnmute unmute tv
-SwitchDeviceUnmute to unmute tv
-SwitchDeviceUnmute turn off mute
-LaunchDeviceApp to open {app_id}
-LaunchDeviceApp start the app {app_id}
-LaunchDeviceApp open the app {app_id}
-LaunchDeviceApp start the application {app_id}
-LaunchDeviceApp open the application {app_id}
-LaunchDeviceApp start the {app_id} app
-LaunchDeviceApp open the {app_id} app
-LaunchDeviceApp start the {app_id} application
-LaunchDeviceApp open the {app_id} application
-SwitchDeviceInput change input to {input_id}
-SwitchDeviceInput switch to {input_id}
-SwitchDeviceInput switch to the {input_id}
-ControlDeviceMediaPlay start playback
-ControlDeviceMediaPlay resume playback
+TurnDeviceOn ligar
+TurnDeviceOn ligar tv
+TurnDeviceOff desligar
+TurnDeviceOff desligar tv
+SwitchDeviceMute mutar
+SwitchDeviceMute mutar tv
+SwitchDeviceUnmute desmutar tv
+LaunchDeviceApp abrir {app_id}
+SwitchDeviceInput alterar entrada para {input_id}
+SwitchDeviceInput trocar para {input_id}
 ControlDeviceMediaPlay play
-ControlDeviceMediaPlay play show
-ControlDeviceMediaPlay resume
-ControlDeviceMediaPause pause
-ControlDeviceMediaPause pause show
-ControlDeviceMediaPause pause playback
-ControlDeviceMediaStop stop show
-ControlDeviceMediaStop stop show
+ControlDeviceMediaPlay resumir
+ControlDeviceMediaPause pausar
+ControlDeviceMediaStop parar

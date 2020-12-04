@@ -13,7 +13,7 @@ class Remote {
     }
 
     audioMute(state: bool): Promise {
-        return this.request('ssap://audio/setMute', {mute: state});
+        return this.request('ssap://audio/setMute', { mute: state });
     }
 
     mediaPlay(): Promise {
@@ -30,13 +30,16 @@ class Remote {
 
     startApp(app: string): Promise {
         const appId = Lookup.app(app);
+        if (!appId) {
+            return new Promise.resolve(false);
+        }
         console.log('Starting: ' + appId);
-        return this.request('ssap://system.launcher/launch', {id: appId});
+        return this.request('ssap://system.launcher/launch', { id: appId });
     }
 
     closeApp(app: string): Promise {
         const appId = Lookup.app(app);
-        return this.request('ssap://system.launcher/close', {id: appId});
+        return this.request('ssap://system.launcher/close', { id: appId });
     }
 
     getAppList(): Promise {
@@ -45,7 +48,7 @@ class Remote {
     }
 
     switchInput(inputId: string): Promise {
-        return this.request('ssap://tv/switchInput', {id: inputId});
+        return this.request('ssap://tv/switchInput', { id: inputId });
     }
 
     turnOn(): Promise {
@@ -53,7 +56,7 @@ class Remote {
         return this.connector.wake()
             .then(() => {
                 console.log('Executing turnOn');
-                if (this.connector.config.debug) {console.log('Config at TurnOn Promise: \n\t%o', this.connector.config);}
+                if (this.connector.config.debug) { console.log('Config at TurnOn Promise: \n\t%o', this.connector.config); }
                 // Auto connect.
                 return this.connector.connect();
             });

@@ -5,59 +5,34 @@
             {
                "name": "TurnDeviceOn",
                "samples": [
-                  "on",
-                  "  turn on  ",
-                  "to turn on  ",
-                  "  turn on tv",
-                  "to turn on tv"
+                  "ligar ",
+                  "ligar tv"
                ]
             },
             {
                "name": "TurnDeviceOff",
                "samples": [
-                  "off",
-                  "  turn off  ",
-                  "to turn off  ",
-                  "  turn off tv",
-                  "to turn off tv"
+                  "desligar  ",
+                  "desligar tv"
                ]
             },
             {
                "name": "SwitchDeviceMute",
                "samples": [
-                  "  mute  ",
-                  "to mute  ",
-                  "  mute tv",
-                  "to mute tv",
-                  "turn on mute"
+                  "mutar  ",
+                  "mutar tv"
                ]
             },
             {
                "name": "SwitchDeviceUnmute",
                "samples": [
-                  "  un mute  ",
-                  " to un mute  ",
-                  "  unmute  ",
-                  " to unmute  ",
-                  "  un mute tv",
-                  " to un mute tv",
-                  "  unmute tv",
-                  " to unmute tv",
-                  "turn off mute"
+                  "desmutar tv"
                ]
             },
             {
                "name": "LaunchDeviceApp",
                "samples": [
-                  " to open {app_id}",
-                  "start the app {app_id}",
-                  "open the app {app_id}",
-                  "start the application {app_id}",
-                  "open the application {app_id}",
-                  "start the {app_id} app",
-                  "open the {app_id} app",
-                  "start the {app_id} application",
-                  "open the {app_id} application"
+                  "abrir {app_id}"
                ],
                "slots": [
                   {
@@ -70,9 +45,8 @@
             {
                "name": "SwitchDeviceInput",
                "samples": [
-                  "change input to {input_id}",
-                  "switch to {input_id}",
-                  "switch to the {input_id}"
+                  "alterar entrada para {input_id}",
+                  "trocar para {input_id}"
                ],
                "slots": [
                   {
@@ -85,26 +59,20 @@
             {
                "name": "ControlDeviceMediaPlay",
                "samples": [
-                  "start playback",
-                  "resume playback",
-                  "play  ",
-                  "play show",
-                  "resume"
+                  "play",
+                  "resumir"
                ]
             },
             {
                "name": "ControlDeviceMediaPause",
                "samples": [
-                  "pause  ",
-                  "pause  show ",
-                  "pause  playback"
+                  "pausar"
                ]
             },
             {
                "name": "ControlDeviceMediaStop",
                "samples": [
-                  "stop show",
-                  "stop show"
+                  "parar"
                ]
             },
             {

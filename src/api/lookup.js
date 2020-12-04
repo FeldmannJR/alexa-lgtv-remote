@@ -3,7 +3,8 @@
 
 const appDictionary = {
     'accessibility': 'com.webos.app.accessibility',
-    'amazon': 'amazon',
+    'amazon': 'amazon.global',
+    'prime': 'amazon.global',
     'cackle': 'cackle',
     'channelplus': 'channelplus.us',
     'deviceconnector': 'com.webos.app.connectionwizard',
@@ -12,6 +13,7 @@ const appDictionary = {
     'google': 'googleplaymovieswebos',
     'guide': 'com.webos.app.tvguide',
     'hulu': 'hulu',
+    'spotify': 'spotify-beehive',
     'lgstore': 'com.webos.app.discovery',
     'live': 'com.webos.app.livetv',
     'music': 'com.webos.app.music',
@@ -39,7 +41,7 @@ const appDictionary = {
     'dvd': 'com.webos.app.hdmi1',
     'chromecast': 'com.webos.app.hdmi2',
     'playstation': 'com.webos.app.hdmi3',
-    'ps4':'com.webos.app.hdmi4',
+    'ps4': 'com.webos.app.hdmi4',
 };
 
 class Lookup {
@@ -52,8 +54,13 @@ class Lookup {
 
         console.log('try to resolve app ' + app);
 
+        const contains = Object.keys(appDictionary).filter(key => app.includes(key));
+
+        if (contains.length == 1) {
+            return appDictionary[contains[0]];
+        }
         if (!appDictionary.hasOwnProperty(app))
-            throw new Error('app id not known');
+            return false;
 
         return appDictionary[app];
     }

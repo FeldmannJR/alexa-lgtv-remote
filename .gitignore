@@ -1,9 +1,11 @@
+
+config.key
 # osx
 .DS_Store
 
 # lgtv
 lgtv-*
-
+speechAssets/*
 # js
 dist
 flow-typed
